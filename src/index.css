@@ -144,7 +144,8 @@ h1{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(11, 10, 10, 0.5);
+  /* background-color: rgba(255, 255, 255, 0.2); */
   border-radius: 24px;
   
 }
@@ -188,5 +189,34 @@ h1{
   margin: 4rem auto;
   padding: 1rem;
   border-radius: 12px;
-  background-color: rgba(11, 10, 10, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.forecast-title p{
+  padding: 2em 0 1em 1.5em;
+  font-size: 24px;
+}
+.forecast{
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.forecast::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.forecast {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+.forecast-Data{
+  padding: 0 2em;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
 }
